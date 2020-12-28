@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #141822;
+  font-family: Langar,sans-serif;
+  color: #fafaf2;
+}
+
+header {
+  margin: 20px;
+  padding-right: 10px;
+  background: #fafaf2;
+  color: #141822;
+}
+
+header > h1 {
+  text-align: center;
+}
+
+header > p {
+  text-align: right;
+}
+
+.scorecard {
+  margin: 20px auto;
+  text-align: center;
+  border: 4px solid #fafaf2;
+  border-radius: 10px;
+  width: 200px;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 46px;
+}
+
+.badge {
+  background: #c29403;
+  position: absolute;
+  padding: 0 15px;
+  font-size: 20px;
+}
+
+#user-label {
+  top: 25px;
+  left: -40px;
+}
+
+#comp-label {
+  top: 25px;
+  right: -45px;
+}
+
+.result {
+  margin: 10px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.choices {
+    margin: 35px;
+    text-align: center;
+}
+
+.choice {
+    display: inline-block;
+    border: 4px double #fafaf2;
+    border-radius: 50%;
+    margin: 0 25px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: black;
+}
+
+#msg {
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+footer {
+  margin: 20px;
+  padding: 0 10px;
+  background: #fafaf2;
+  color: #141822;
+  text-align: right;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

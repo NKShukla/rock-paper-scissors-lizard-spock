@@ -96,3 +96,18 @@ footer {
   bottom: 10px;
   right: 10px;
 }
+
+.green-glow {
+  border-color: #fdfffd;
+  box-shadow: #69fe72;
+}
+
+.red-glow {
+  border-color: #fdfffd;
+  box-shadow: #f4645e;
+}
+
+.yellow-glow {
+  border-color: #fdfffd;
+  box-shadow: #f9cf52;
+}

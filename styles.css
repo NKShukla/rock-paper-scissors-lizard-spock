@@ -31,7 +31,7 @@ header > p {
   text-align: center;
   border: 4px solid #fafaf2;
   border-radius: 10px;
-  width: 200px;
+  width: 250px;
   position: relative;
   padding: 10px 20px;
   font-size: 46px;
@@ -56,6 +56,7 @@ header > p {
 
 .result {
   margin: 10px;
+  min-height: 70px;
   font-size: 40px;
   text-align: center;
   font-weight: bold;

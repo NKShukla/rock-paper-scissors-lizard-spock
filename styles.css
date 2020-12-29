@@ -98,16 +98,13 @@ footer {
 }
 
 .green-glow {
-  border-color: #fdfffd;
-  box-shadow: #69fe72;
+  box-shadow: 0 0 30px #69fe72;
 }
 
 .red-glow {
-  border-color: #fdfffd;
-  box-shadow: #f4645e;
+  box-shadow: 0 0 30px #fe4753;
 }
 
 .yellow-glow {
-  border-color: #fdfffd;
-  box-shadow: #f9cf52;
+  box-shadow: 0 0 30px #f9cf52;
 }

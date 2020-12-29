@@ -36,6 +36,10 @@ function win(userChoice, compChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   result_div.innerHTML = `${convertToWord(userChoice)}${user_label} beats ${convertToWord(compChoice)}${comp_label}. You win!`;
+
+  const userChoice_div = document.getElementById(userChoice);
+  userChoice_div.classList.add("green-glow");
+  setTimeout(() => userChoice_div.classList.remove("green-glow"), 300);
 }
 
 function lose(userChoice, compChoice) {
@@ -44,12 +48,20 @@ function lose(userChoice, compChoice) {
   compScore++;
   compScore_span.innerHTML = compScore;
   result_div.innerHTML = `${convertToWord(userChoice)}${user_label} is beaten by ${convertToWord(compChoice)}${comp_label}. You lost!`;
+
+  const userChoice_div = document.getElementById(userChoice);
+  userChoice_div.classList.add("red-glow");
+  setTimeout(() => userChoice_div.classList.remove("red-glow"), 300);
 }
 
 function draw(userChoice, compChoice) {
   const user_label = "User".fontsize(4).sub();
   const comp_label = "Comp".fontsize(4).sub();
   result_div.innerHTML = `${convertToWord(userChoice)}${user_label} nullifies ${convertToWord(compChoice)}${comp_label}. Match is draw!`;
+
+  const userChoice_div = document.getElementById(userChoice);
+  userChoice_div.classList.add("yellow-glow");
+  setTimeout(() => userChoice_div.classList.remove("yellow-glow"), 300);
 }
 
 function play(userChoice) {
